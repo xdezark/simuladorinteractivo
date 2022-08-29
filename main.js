@@ -37,7 +37,10 @@ alert("Seleccionaste "+ nombre+"\nPrecio: $"+precio);
 let pago= parseInt(prompt("Con cuanto pagas?"))
 if(pago>precio){
     alert("Gracias! Tu vuelto es "+ (pago - precio))
-}else{
+}else if (pago===precio){
+    alert("Gracias por tu compra!")
+}
+else{
     alert("El monto ingresado es insuficiente")
 }
 }
